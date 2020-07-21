@@ -1,0 +1,17 @@
+server:
+  port: 8081
+
+spring:
+  datasource:
+    url: jdbc:oracle:thin:@localhost:1521/orcl
+    username: SMAK
+    password: PASS
+
+  jpa:
+    database-platform: org.hibernate.dialect.Oracle12cDialect
+    hibernate:
+      ddl-auto: create
+
+aws:
+  accessKeyId: <<ADD YOUR AWS ACCESSKEY>>
+  secretKey: <<ADD YOUR AWS SECRETKEY>>
